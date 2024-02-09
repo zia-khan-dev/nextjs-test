@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.watch_text {
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.search_bar {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 20px;
+  flex-grow: 1;
+  flex: 8;
+}
+.search_input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  outline: none;
+  background-color: #f2f2f2;
+}
+
+.search_icon {
+  position: absolute;
+  color: #28a745;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #495057;
+  width: 24px;
+  height: 24px;
+}
+.wishlist {
+  display: flex;
+  align-items: center;
+  background-color: #28a745;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  max-width: 180px;
+  min-height: 48px;
+  min-width: 125px;
+}
+.wishlist svg {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  color: white;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+.buttons_group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+.buttons_group .round_border {
+  position: relative;
+  display: inline-flex;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.buttons_group .round_button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  max-width: 24px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.dropdown {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: #ffffff 0.2s;
+}
+
+.dropdown ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown ul li:not(:last-child) {
+  border-bottom: 1px solid #eeeeee;
+}

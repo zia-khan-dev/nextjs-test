@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  font-family: "HarmonyOS Sans", "Inter", "Microsoft YaHei UI",
+    "PingFangSC-Regular", Helvetica, Arial, sans-serif;
+}
+.wrapper {
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 2px 4px rgba(247, 241, 241, 0.1);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.slider_row {
+  display: flex;
+  gap: 0.7rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  word-wrap: break-word !important ;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.slider_row::-webkit-scrollbar {
+  display: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.card_item {
+  flex: 0 0 22%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  text-align: left;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 5%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card_slider {
+  width: 170px;
+  margin: 5px;
+  text-align: left;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card_item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_content .tool_image {
+  width: 65px;
+}
+.card_content h3 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #121212;
+  text-decoration: none;
+}
+.card_content p {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(60, 60, 67, 0.6);
+  overflow: hidden !important;
+  word-wrap: break-word !important;
+}
+
+.button-contianer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+}
+
+.btns button {
+  background-color: white;
+  background-color: black;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.btns button svg {
+  fill: white;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
