@@ -94,8 +94,8 @@ const Footer = () => {
           <h5>Internal Links</h5>
           <ul>
             {interLinks.map((item, index) => (
-              <li>
-                <a href={item.href} key={index}>
+              <li key={index}>
+                <a href={item.href} >
                   {item.list}
                 </a>
               </li>

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./card.module.css";
+import Image from "next/image";
 
 
 const CardItem = ({data, slider}) => {
@@ -8,7 +9,7 @@ const CardItem = ({data, slider}) => {
       {data?.map((card, index) => (
         <div key={index} className={slider ? styles.card_slider : styles.card_item}>
           <span href={card.href} className={styles.card_content}>
-            <img
+            <Image
               className={styles.tool_image}
               src={card.imgUrl}
               alt={card.title.toLowerCase().replace(/\s+/g, "-")}
